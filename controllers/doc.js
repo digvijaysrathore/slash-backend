@@ -2,9 +2,10 @@ const Doc = require("../models/doc");
 const uuid = require("uuidv1");
 
 exports.adddoc = (req, res) => {
-    const {image, title, summary, body, developer} = req.body
+    const {image, title, summary, body, developer, userkey} = req.body
     const dockey = uuid()
     const docs = new Doc({
+        userkey: userkey,
         image: image,
         title: title,
         summary: summary,

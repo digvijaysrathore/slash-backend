@@ -5,7 +5,7 @@ const {adduser, edituser, getById, getAll, upvoteuser} = require("../controllers
 router.post("/adduser", adduser);
 router.put("/edituser", edituser);
 router.put("/upvoteuser", upvoteuser);
-router.post("/getuser/:userkey", getById);
+router.post("/getuser", getById);
 router.post("/getalluser", getAll);
 
 module.exports = router;

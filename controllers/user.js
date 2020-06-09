@@ -35,7 +35,7 @@ exports.edituser = (req, res) => {
 
 exports.getById = (req, res) => {
     User.findOne(
-        {userkey: req.body.userkey},
+        {email: req.body.email},
         (err, user) => {
             if(err){
                 return res.status(400).json({

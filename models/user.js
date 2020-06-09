@@ -19,6 +19,9 @@ const userSchema = new Schema({
     bio: {
         type: String
     },
+    instagram: {
+        type: String
+    },
     docs: [],
     upvote: {
         type: Number,
